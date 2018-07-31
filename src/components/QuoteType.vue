@@ -1,6 +1,6 @@
 <template>
     <div>
-        <form @keydown.enter="createQuote">
+        <form @keydown.enter.prevent="createQuote">
             <div class="form-container">
                 <label style='display:block;'> Quote of the day.. </label>
                 <textarea class="textarea" placeholder="Type in here your quote..." v-model="quote"></textarea>
@@ -26,6 +26,7 @@
                     alert('Please, type your quote before submitting it')
                 } else {
                     this.$emit('quoteAdded', this.quote);
+                    console.log('ciccia')
                     this.quote = '';
                 }
             }

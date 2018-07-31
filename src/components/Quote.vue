@@ -5,13 +5,7 @@
 </template>
 
 <script>
-    // export default {
-    //     data() {
-    //         return {
-    //             props: ['quotes'],
-    //         }
-    //     }
-    // }
+
 </script>
 
 <style scoped>

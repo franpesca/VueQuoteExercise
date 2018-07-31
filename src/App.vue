@@ -29,7 +29,6 @@
         if (this.quotes.length > 10) {
           alert('You have reached the max number of quote!')
         } else {
-          console.log('debug')
           this.quotes.push(quote)
         }
       },
